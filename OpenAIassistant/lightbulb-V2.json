@@ -1,0 +1,21 @@
+{
+    "name": "lightbulb",
+    "strict": false,
+    "schema": {
+        "type": "object",
+        "properties": {
+            "lightState": {
+                "type": "boolean",
+                "description": "Binary state: true for ON, false for OFF"
+            },
+            "decisionReason": {
+                "type": "string",
+                "description": "Analysis and reason for turning the light on or off"
+            }
+        },
+        "required": [
+            "lightState"
+        ],
+        "additionalProperties": true
+    }
+}

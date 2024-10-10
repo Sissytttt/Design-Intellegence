@@ -1,0 +1,57 @@
+{
+    "name": "microwave",
+    "strict": false,
+    "schema": {
+        "type": "object",
+        "properties": {
+            "powerLevel": {
+                "type": "string",
+                "enum": [
+                    "100% (High)",
+                    "80% (Medium-High)",
+                    "60% (Medium)",
+                    "40% (Medium-Low)",
+                    "20% (Low)"
+                ],
+                "description": "The intensity of the microwave energy as a percentage of its maximum power"
+            },
+            "timer": {
+                "type": "integer",
+                "description": "Time to cook in seconds"
+            },
+            "cookingMode": {
+                "type": "string",
+                "enum": [
+                    "Microwave (default)",
+                    "Grill",
+                    "Convection",
+                    "Steam",
+                    "Defrost"
+                ],
+                "description": "Cooking mode for the microwave"
+            },
+            "light": {
+                "type": "boolean",
+                "description": "Whether the microwave light is ON (true) or OFF (false)"
+            },
+            "bell": {
+                "type": "boolean",
+                "description": "Whether the bell is set to RING (true) or OFF (false)"
+            },
+            "rotatingPlate": {
+                "type": "boolean",
+                "description": "Whether the rotating plate is rotating (true) or still (false)"
+            },
+            "startPause": {
+                "type": "boolean",
+                "description": "Start (true) or Pause (false) the microwave"
+            }
+        },
+        "required": [
+            "powerLevel",
+            "timer",
+            "cookingMode"
+        ],
+        "additionalProperties": true
+    }
+}

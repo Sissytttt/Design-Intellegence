@@ -1,0 +1,32 @@
+{
+  "2024-10-10T01:32:47.312637": {
+    "user_input": "hi",
+    "response": {
+      "powerLevel": "",
+      "timer": 0,
+      "cookingMode": "",
+      "light": false,
+      "bell": false,
+      "rotatingPlate": false,
+      "startPause": false,
+      "feedback": "",
+      "explanation": "Hello! How can I assist you with your microwave settings today?",
+      "additional_info": ""
+    }
+  },
+  "2024-10-10T01:33:28.413354": {
+    "user_input": "reheat a pizza",
+    "response": {
+      "powerLevel": "60% (Medium)",
+      "timer": 120,
+      "cookingMode": "Microwave (default)",
+      "light": true,
+      "bell": true,
+      "rotatingPlate": true,
+      "startPause": true,
+      "feedback": "",
+      "explanation": "To reheat a pizza, set the microwave to a medium power level to heat evenly. The timer is set to 2 minutes. You can pause the process anytime to check if the pizza is warm enough for your taste.",
+      "additional_info": "Always be careful when handling hot food. The time and settings are only an initial estimate. Adjust according to your preference."
+    }
+  }
+}

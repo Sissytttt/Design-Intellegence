@@ -1,0 +1,243 @@
+{
+    "microwaveHistory": [
+        {
+            "id": 1,
+            "userPromptInput": "I want to defrost a chicken breast",
+            "microwaveReply": {
+                "powerLevel": "40% (Medium-Low)",
+                "timer": 600,
+                "cookingMode": "Defrost",
+                "light": true,
+                "bell": true,
+                "rotatingPlate": true,
+                "startPause": true
+            },
+            "userFeedback": "The chicken is still frozen in the center.",
+            "microwaveReplyFollowup": {
+                "powerLevel": "40% (Medium-Low)",
+                "timer": 300,
+                "cookingMode": "Defrost",
+                "light": true,
+                "bell": true,
+                "rotatingPlate": true,
+                "startPause": true
+            },
+            "userFeedbackFinal": "Now it’s defrosted perfectly.",
+            "feedbackStatus": "Success",
+            "futureAdjustment": {
+                "powerLevel": "40% (Medium-Low)",
+                "timer": 600,
+                "cookingMode": "Defrost"
+            }
+        },
+        {
+            "id": 2,
+            "userPromptInput": "I want to reheat leftover pizza",
+            "microwaveReply": {
+                "powerLevel": "80% (Medium-High)",
+                "timer": 120,
+                "cookingMode": "Microwave",
+                "light": true,
+                "bell": true,
+                "rotatingPlate": true,
+                "startPause": true
+            },
+            "userFeedback": "It is okay to eat now. but it is too soft for me. next time, I would wanted the crust a bit crispy.",
+            "feedbackStatus": "Success",
+            "futureAdjustment": {
+                "powerLevel": "60% (Medium)",
+                "timer": 90,
+                "cookingMode": "Grill",
+                "light": true,
+                "bell": true,
+                "rotatingPlate": true,
+                "startPause": true
+            }
+        },
+        {
+            "id": 3,
+            "userPromptInput": "I want to cook a baked potato.",
+            "microwaveReply": {
+                "powerLevel": "100% (High)",
+                "timer": 480,
+                "cookingMode": "Microwave",
+                "light": true,
+                "bell": true,
+                "rotatingPlate": true,
+                "startPause": true
+            },
+            "userFeedback": "The potato isn’t cooked all the way through.",
+            "microwaveReplyFollowup": {
+                "powerLevel": "100% (High)",
+                "timer": 240,
+                "cookingMode": "Microwave",
+                "light": true,
+                "bell": true,
+                "rotatingPlate": true,
+                "startPause": true
+            },
+            "userFeedbackFinal": "Now it’s perfect.",
+            "feedbackStatus": "Success",
+            "futureAdjustment": {
+                "powerLevel": "100% (High)",
+                "timer": 720,
+                "cookingMode": "Microwave"
+            }
+        },
+        {
+            "id": 4,
+            "userPromptInput": "I want to warm some soup",
+            "microwaveReply": {
+                "powerLevel": "80% (Medium-High)",
+                "timer": 120,
+                "cookingMode": "Microwave",
+                "light": true,
+                "bell": true,
+                "rotatingPlate": true,
+                "startPause": true
+            },
+            "userFeedback": "The soup is still cold.",
+            "microwaveReplyFollowup": {
+                "powerLevel": "80% (Medium-High)",
+                "timer": 120,
+                "cookingMode": "Microwave",
+                "light": true,
+                "bell": true,
+                "rotatingPlate": true,
+                "startPause": true
+            },
+            "userFeedbackFinal": "Now it’s warm enough.",
+            "feedbackStatus": "Success",
+            "futureAdjustment": {
+                "powerLevel": "80% (Medium-High)",
+                "timer": 240,
+                "cookingMode": "Microwave"
+            }
+        },
+        {
+            "id": 5,
+            "userPromptInput": "I want to defrost frozen vegetables",
+            "microwaveReply": {
+                "powerLevel": "40% (Medium-Low)",
+                "timer": 300,
+                "cookingMode": "Defrost",
+                "light": true,
+                "bell": true,
+                "rotatingPlate": true,
+                "startPause": true,
+                "decisionReason": "Starting at low power for even defrosting without cooking the vegetables."
+            },
+            "userFeedback": "They’re still too frozen.",
+            "microwaveReplyFollowup": {
+                "powerLevel": "40% (Medium-Low)",
+                "timer": 180,
+                "cookingMode": "Defrost",
+                "light": true,
+                "bell": true,
+                "rotatingPlate": true,
+                "startPause": true,
+                "decisionReason": "Adding 3 more minutes at the same power for complete defrosting."
+            },
+            "userFeedbackFinal": "Now they’re defrosted perfectly.",
+            "feedbackStatus": "Success",
+            "futureAdjustment": {
+                "powerLevel": "40% (Medium-Low)",
+                "timer": 480,
+                "cookingMode": "Defrost"
+            }
+        },
+        {
+            "id": 6,
+            "userPromptInput": "I want to steam a rice",
+            "microwaveReply": {
+                "powerLevel": "100% (High)",
+                "timer": 600,
+                "cookingMode": "Steam",
+                "light": true,
+                "bell": true,
+                "rotatingPlate": true,
+                "startPause": true
+            },
+            "userFeedback": null,
+            "microwaveReplyFollowup": null,
+            "userFeedbackFinal": null,
+            "feedbackStatus": "Pending",
+            "futureAdjustment": null
+        },
+        {
+            "id": 7,
+            "userPromptInput": "I want to steam another rice for my friend Bob, he likes rice with crispy crust",
+            "microwaveReply": {
+                "powerLevel": "60% (Medium)",
+                "timer": 600,
+                "cookingMode": "Steam",
+                "light": true,
+                "bell": true,
+                "rotatingPlate": true,
+                "startPause": true
+            },
+            "userFeedback": null,
+            "microwaveReplyFollowup": {
+                "powerLevel": "100% (High)",
+                "timer": 180,
+                "cookingMode": "Grill",
+                "light": true,
+                "bell": true,
+                "rotatingPlate": true,
+                "startPause": true
+            },
+            "userFeedbackFinal": "it is good!",
+            "feedbackStatus": "Success",
+            "futureAdjustment": {
+                "steamingSettings": {
+                    "powerLevel": "100% (High)",
+                    "timer": 600,
+                    "cookingMode": "Steam"
+                },
+                "grillingSettings": {
+                    "powerLevel": "80% (Medium-High)",
+                    "timer": 600,
+                    "cookingMode": "Grill"
+                }
+            }
+        },
+        {
+            "id": 8,
+            "userPromptInput": "Heat up a frozen pizza",
+            "microwaveReply": {
+                "powerLevel": "60% (Medium)",
+                "timer": 90,
+                "cookingMode": "Grill",
+                "light": true,
+                "bell": true,
+                "rotatingPlate": true,
+                "startPause": true
+            },
+            "userFeedback": null,
+            "feedbackStatus": "Pending",
+            "futureAdjustment": null
+        },
+        {
+            "id": 9,
+            "userPromptInput": "Heat up another piece of frozen pizza for Bob, he likes soft pizzas",
+            "microwaveReply": {
+                "powerLevel": "80% (Medium-High)",
+                "timer": 120,
+                "cookingMode": "Microwave",
+                "light": true,
+                "bell": true,
+                "rotatingPlate": true,
+                "startPause": true
+            },
+            "userFeedbackFinal": "Bob likes it very much.",
+            "feedbackStatus": "Success",
+            "futureAdjustment": {
+                "steamingSettings": {
+                    "powerLevel": "80% (Medium-High)",
+                    "timer": 120,
+                    "cookingMode": "Microwave"
+                }
+            }
+        }
+    ]
+}

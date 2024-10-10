@@ -1,0 +1,65 @@
+{
+    "name": "lightbulb",
+    "strict": false,
+    "schema": {
+        "type": "object",
+        "properties": {
+            "userInput": {
+                "type": "string",
+                "description": "The user's input or command"
+            },
+            "lightState": {
+                "type": "boolean",
+                "description": "Binary state: 1 for ON, 0 for OFF"
+            },
+            "decisionReason": {
+                "type": "string",
+                "description": "Analysis and reason for turning the light on or off"
+            },
+            "time": {
+                "type": "object",
+                "properties": {
+                    "timeOfDay": {
+                        "type": "string",
+                        "enum": [
+                            "morning",
+                            "afternoon",
+                            "evening",
+                            "night",
+                            "unknown"
+                        ],
+                        "description": "Current time of day"
+                    },
+                    "dayOfWeek": {
+                        "type": "string",
+                        "enum": [
+                            "Monday",
+                            "Tuesday",
+                            "Wednesday",
+                            "Thursday",
+                            "Friday",
+                            "Saturday",
+                            "Sunday",
+                            "workdays",
+                            "weekends",
+                            "unknown"
+                        ],
+                        "description": "Day of the week, if known"
+                    }
+                },
+                "additionalProperties": true
+            },
+            "userPreferences": {
+                "type": "object",
+                "additionalProperties": true,
+                "description": "Dynamic preferences based on user interactions"
+            }
+        },
+        "required": [
+            "userInput",
+            "lightState",
+            "timeOfDay"
+        ],
+        "additionalProperties": true
+    }
+}

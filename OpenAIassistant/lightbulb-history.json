@@ -1,0 +1,60 @@
+{
+    "lightBultHistory": [
+        {
+            "id": 1,
+            "userInput": "good morning",
+            "lightbulbReply": {
+                "lightState": 1,
+                "decisionReason": "It's morning, and natural light is likely still limited. Turning on the light helps create a bright and welcoming environment for the start of the day."
+            }
+        },
+        {
+            "id": 2,
+            "userInput": "User: it is morning, but I am so sleepy Time: 8am Day: Monday",
+            "lightbulbReply": {
+                "lightState": 1,
+                "decisionReason": "It's Monday morning at 8 AM. Many people feel sleepy at this time, especially on the start of a workweek. Turning on the light can help energize the environment and encourage wakefulness."
+            }
+        },
+        {
+            "id": 3,
+            "userInput": "User: I dont usually need to wake up early on Mondays., because I don;t have class on Monday morning. Time: 8am Day: Monday",
+            "lightbulbReply": {
+                "lightState": 0,
+                "decisionReason": "It's 8 AM on a Monday, and since the user does not have class this morning, there is no immediate need for light. Turning off the light keeps the space conducive for relaxation and rest."
+            }
+        },
+        {
+            "id": 4,
+            "userInput": "User: But for Tuesday and Wednesday, I have to wake up early. Time: 8am Day: Monday",
+            "lightbulbReply": {
+                "lightState": 0,
+                "decisionReason": "It's still Monday at 8 AM, and the user has no classes this morning. There’s no need to turn on the light, regardless of early mornings on Tuesday and Wednesday."
+            }
+        },
+        {
+            "id": 5,
+            "userInput": "User: So sleepy, I got party last night I still want to sleep. Time: 8am Day: Tuesday",
+            "lightbulbReply": {
+                "lightState": 1,
+                "decisionReason": "It's 8 AM on a Tuesday, and the user is feeling sleepy after a late night. Turning on the light can help encourage wakefulness and combat sleepiness, making it easier to start the day."
+            }
+        },
+        {
+            "id": 6,
+            "userInput": "User: for thursday and friday, it depends, i don't usually have to get up, but I sometimes have morning meetings. Time: 8am Day: Tuesday",
+            "lightbulbReply": {
+                "lightState": 1,
+                "decisionReason": "It's 8 AM on Tuesday, and since the user sometimes has morning meetings on Thursday and Friday, turning on the light can help establish a routine and prepare for possible morning engagements."
+            }
+        },
+        {
+            "id": 7,
+            "userInput": "User: it is rainy outside, what a good weather for sleeping in. Time: 8am Day: Frisday",
+            "lightbulbReply": {
+                "lightState": 0,
+                "decisionReason": "It's 8 AM on Friday, and given that it's rainy outside, it's understandable to feel like sleeping in. Since there’s no immediate need to wake up, I will turn off the light to promote a cozy sleeping environment."
+            }
+        }
+    ]
+}
