@@ -28,5 +28,50 @@
       "explanation": "To reheat a pizza, set the microwave to a medium power level to heat evenly. The timer is set to 2 minutes. You can pause the process anytime to check if the pizza is warm enough for your taste.",
       "additional_info": "Always be careful when handling hot food. The time and settings are only an initial estimate. Adjust according to your preference."
     }
+  },
+  "2024-10-10T02:01:06.811763": {
+    "user_input": "hi",
+    "response": {
+      "powerLevel": "",
+      "timer": 0,
+      "cookingMode": "",
+      "light": false,
+      "bell": false,
+      "rotatingPlate": false,
+      "startPause": false,
+      "feedback": "",
+      "explanation": "Hello! How can I assist you today?",
+      "additional_info": ""
+    }
+  },
+  "2024-10-10T09:59:04.965831": {
+    "user_input": "i want to reheat a pizza",
+    "response": {
+      "powerLevel": "80% (Medium-High)",
+      "timer": 120,
+      "cookingMode": "Microwave (default)",
+      "light": true,
+      "bell": true,
+      "rotatingPlate": true,
+      "startPause": true,
+      "feedback": "",
+      "explanation": "The microwave has been set to a medium-high power level for 2 minutes. Please ensure the pizza is placed on the rotating plate for even heating.",
+      "additional_info": "Power level and cooking time might need adjustment depending on the size and topping of the pizza."
+    }
+  },
+  "2024-10-10T11:02:37.932455": {
+    "user_input": "i want to defrost a chicken",
+    "response": {
+      "powerLevel": "40% (Medium-Low)",
+      "timer": 900,
+      "cookingMode": "Defrost",
+      "light": true,
+      "bell": true,
+      "rotatingPlate": true,
+      "startPause": true,
+      "feedback": "",
+      "explanation": "The microwave has been set to a medium-low power level for defrosting mode for 15 minutes. Please ensure the chicken is placed on the rotating plate for even defrosting.",
+      "additional_info": "Power level and cooking time might need adjustment depending on the size of the chicken."
+    }
   }
 }

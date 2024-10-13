@@ -118,6 +118,8 @@ def write_to_history(user_input, response):
     
     print(f"Interaction saved to: {file_path}")
 
+
+
 interaction_id = 0
 while True:
     event_handler = EventHandler()
