@@ -6,6 +6,7 @@ from openai import AssistantEventHandler, OpenAI
 
 client = OpenAI()
 
+
 # Function to load interaction history
 def load_interaction_history():
     file_path = 'microwave_history.json'
