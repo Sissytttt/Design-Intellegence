@@ -12,7 +12,6 @@
 #     -- added the 'file search' tool to the assistant. it is now able to read the past history file
 
 
-
 import openai
 from typing_extensions import override
 import json
@@ -60,7 +59,7 @@ assistant = client.beta.assistants.create(
     Remember, your entire response must be a single, valid JSON object with no additional text.
     """,
     tools=[{"type": "file_search"}],
-    model="gpt-3.5-turbo"
+    model="gpt-3.5-turbo" # change to 4os
 )
 
 # Defining the assistant:
