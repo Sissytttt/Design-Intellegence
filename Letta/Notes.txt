@@ -1,0 +1,22 @@
+
+
+all tools: (able to replace or add tools )
+    ['send_message',
+    'conversation_search', 
+    'conversation_search_date', 
+    'archival_memory_insert', 
+    'archival_memory_search', 
+    'core_memory_append', 
+    'core_memory_replace']
+
+response.message:
+    [InternalMonologue(id='message-d9ef126c-e265-42d2-93fb-20d40e629470', date=datetime.datetime(2024, 10, 27, 22, 41, 49, 857028, tzinfo=datetime.timezone.utc), message_type='internal_monologue', internal_monologue='User greeted me again. I want to keep the conversation flowing!'),
+    FunctionCallMessage(id='message-d9ef126c-e265-42d2-93fb-20d40e629470', date=datetime.datetime(2024, 10, 27, 22, 41, 49, 857028, tzinfo=datetime.timezone.utc), message_type='function_call', function_call=FunctionCall(name='send_message', arguments='{\n  "message": "Hi again, Li Bo! 😊 How\'s everything going?"\n}', function_call_id='call_Pbh7Ppy6GlRAyqPtxV0WTgcl')),
+    FunctionReturn(id='message-4eee5f97-3d3b-4c52-8b2b-d1f2a6515021', date=datetime.datetime(2024, 10, 27, 22, 41, 49, 857459, tzinfo=datetime.timezone.utc), message_type='function_return', function_return='{\n  "status": "OK",\n  "message": "None",\n  "time": "2024-10-27 06:41:49 PM EDT-0400"\n}', status='success', function_call_id='call_Pbh7Ppy6GlRAyqPtxV0WTgcl')]
+
+    [InternalMonologue(id='message-81c916aa-7f42-4d7e-8f1c-dad126c1b2bf', date=datetime.datetime(2024, 10, 27, 22, 22, 39, 610638, tzinfo=datetime.timezone.utc), message_type='internal_monologue', internal_monologue="Updating user's name from Sissy to Li Bo for accurate interactions."), 
+    FunctionCallMessage(id='message-81c916aa-7f42-4d7e-8f1c-dad126c1b2bf', date=datetime.datetime(2024, 10, 27, 22, 22, 39, 610638, tzinfo=datetime.timezone.utc), message_type='function_call', function_call=FunctionCall(name='core_memory_replace', arguments='{\n  "name": "human",\n  "old_content": "Sissy",\n  "new_content": "Li Bo",\n  "request_heartbeat": true\n}', function_call_id='call_vDMpxKLmr6ASnyBtqP9owKXx')), 
+    FunctionReturn(id='message-08cd41d0-7dc8-40b5-aa17-afc7f479ded9', date=datetime.datetime(2024, 10, 27, 22, 22, 39, 611722, tzinfo=datetime.timezone.utc), message_type='function_return', function_return='{\n  "status": "OK",\n  "message": "None",\n  "time": "2024-10-27 06:22:39 PM EDT-0400"\n}', status='success', function_call_id='call_vDMpxKLmr6ASnyBtqP9owKXx'), 
+    InternalMonologue(id='message-db5a5076-f401-4aa3-beb4-ed71dff153e7', date=datetime.datetime(2024, 10, 27, 22, 22, 40, 735207, tzinfo=datetime.timezone.utc), message_type='internal_monologue', internal_monologue="User's name is now Li Bo. Let's keep the interaction warm and user-focused."), 
+    FunctionCallMessage(id='message-db5a5076-f401-4aa3-beb4-ed71dff153e7', date=datetime.datetime(2024, 10, 27, 22, 22, 40, 735207, tzinfo=datetime.timezone.utc), message_type='function_call', function_call=FunctionCall(name='send_message', arguments='{\n  "message": "Thanks for the update, Li Bo! 😊 What can I do for you today?"\n}', function_call_id='call_uRMnfA6dF4dbzMqXBxdcRtw5')), 
+    FunctionReturn(id='message-6e472a25-4671-4780-a5c7-1ee5b306c22d', date=datetime.datetime(2024, 10, 27, 22, 22, 40, 735654, tzinfo=datetime.timezone.utc), message_type='function_return', function_return='{\n  "status": "OK",\n  "message": "None",\n  "time": "2024-10-27 06:22:40 PM EDT-0400"\n}', status='success', function_call_id='call_uRMnfA6dF4dbzMqXBxdcRtw5')]

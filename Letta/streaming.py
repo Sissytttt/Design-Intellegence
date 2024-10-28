@@ -1,5 +1,5 @@
 # agent name to interact with:
-agent_name = "test"
+agent_name = "Microwave"
 
 from letta import create_client
 import json
@@ -41,7 +41,7 @@ while True:
                 if message.function_call.name == 'send_message':
                     arguments = message.function_call.arguments
                     arguments_dict = json.loads(arguments)
-                    print(f"FunctionCallMessage - Send_Message: {arguments_dict['message']}")
+                    print(f"Send_Message: {arguments_dict['message']}")
                 else:
                     print(f"{message.function_call.name}: {message.function_call.arguments}")
             elif class_name == "FunctionReturn":
