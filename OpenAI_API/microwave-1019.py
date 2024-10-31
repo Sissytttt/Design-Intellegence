@@ -59,7 +59,7 @@ assistant = client.beta.assistants.create(
     Remember, your entire response must be a single, valid JSON object with no additional text.
     """,
     tools=[{"type": "file_search"}],
-    model="gpt-3.5-turbo" # change to 4os
+    model="gpt-4o" # change to 4os
 )
 
 # Defining the assistant:

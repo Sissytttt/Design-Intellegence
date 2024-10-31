@@ -627,5 +627,19 @@
       "explanation": "The drop egg soup is now ready to eat. It was cooked at 100% power for 20 seconds in the microwave with all settings active.",
       "additional_info": "Remember this setting for future reference when making drop egg soup."
     }
+  },
+  "2024-10-28T10:53:33.950733": {
+    "user_input": "i want to heat up a pizza",
+    "response": {
+      "error": "Invalid JSON",
+      "raw_response": ""
+    }
+  },
+  "2024-10-28T10:59:56.120687": {
+    "user_input": "i want to heat a pizza",
+    "response": {
+      "error": "Invalid JSON",
+      "raw_response": ""
+    }
   }
 }

@@ -16,7 +16,7 @@ client.set_default_embedding_config(
 )
 
 agent_state = client.create_agent(
-    name="test",
+    name="test2",
     memory=ChatMemory(
         human="user",
         persona="""

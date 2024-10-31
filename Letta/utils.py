@@ -62,11 +62,11 @@ def get_system(agent_name):
 
 
 # get_agents()
-# list_tools("test")
+list_tools("test")
 # get_mem("test")
 
 # get_system("test")
 # new_systemInstruction = "you are a microwave, yeah!!"
 # updated_agent = update_system("Microwave", new_systemInstruction)
 # print_agent("test")
-print_agent("Microwave")
+# print_agent("Microwave")
