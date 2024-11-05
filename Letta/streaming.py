@@ -1,6 +1,6 @@
 # agent name to interact with:
-agent_name = "Storyteller"
-
+# agent_name = "Storyteller"
+agent_name = "test1"
 from letta import create_client
 import json
 

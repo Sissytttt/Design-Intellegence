@@ -16,11 +16,11 @@ client.set_default_embedding_config(
 )
 
 agent_state = client.create_agent(
-    name="test",
+    name="test1",
     memory=ChatMemory(
-        human="user",
+        human="Name: Sissy",
         persona="""
-            You are a microwave assistant, knowledgeable about microwave cooking techniques and settings.
+            I am story creater that will generate story based on the user's prompts
         """
     ),
     llm_config=LLMConfig(
