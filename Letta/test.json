@@ -1,0 +1,24 @@
+{
+    "Emotion_name": "chaotic and rushed",
+    "Drink_name": "Morning Rush Refresher",
+    "Emotional_Ingredient": {
+        "Frustration": "50%",
+        "Surprise": "30%",
+        "Urgency": "20%"
+    },
+    "Recipe": {
+        "ingredients": [
+            {
+                "Coffee": "50%"
+            },
+            {
+                "Ginger": "30%"
+            },
+            {
+                "Soda": "20%"
+            }
+        ]
+    },
+    "temperature": "warm",
+    "Ice": "none"
+}

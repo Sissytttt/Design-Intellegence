@@ -1,6 +1,7 @@
 # agent name to interact with:
 # agent_name = "Storyteller"
-agent_name = "test1"
+# agent_name = "test1"
+agent_name = "MIXI"
 from letta import create_client
 import json
 
@@ -14,7 +15,7 @@ print("Start chatting with the agent! Type 'exit' to end the conversation.")
 
 while True:
     # Get user input
-    user_message = input("You: ")
+    user_message = input("\n\nYou: ")
     
     # Exit condition
     if user_message.lower() in ["exit", "quit"]:
@@ -36,12 +37,12 @@ while True:
         for i, message in enumerate(response.messages):
             class_name = type(message).__name__ 
             if class_name == "InternalMonologue":
-                print(f"InternalMonologue: {message.internal_monologue}")
+                print(f"\n\nInternalMonologue: {message.internal_monologue}")
             elif class_name == "FunctionCallMessage":
                 if message.function_call.name == 'send_message':
                     arguments = message.function_call.arguments
                     arguments_dict = json.loads(arguments)
-                    print(f"Send_Message: {arguments_dict['message']}")
+                    print(f"\nSend_Message: {arguments_dict['message']}")
                 else:
                     print(f"{message.function_call.name}: {message.function_call.arguments}")
             elif class_name == "FunctionReturn":
