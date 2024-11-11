@@ -1,7 +1,8 @@
-from letta import create_client
+
 from letta.schemas.llm_config import LLMConfig
 from letta.schemas.memory import ChatMemory
 from letta import client, LLMConfig, EmbeddingConfig
+from letta import create_client
 
 client = create_client()
 
