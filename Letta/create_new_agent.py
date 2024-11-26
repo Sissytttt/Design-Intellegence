@@ -17,11 +17,11 @@ client.set_default_embedding_config(
 )
 
 agent_state = client.create_agent(
-    name="test1",
+    name="test",
     memory=ChatMemory(
-        human="Name: Sissy",
+        human="",
         persona="""
-            I am story creater that will generate story based on the user's prompts
+            
         """
     ),
     llm_config=LLMConfig(
@@ -50,8 +50,8 @@ def send_message_to_agent(agent_id, message):
     # return response.message
 
 
-user_input = "Hi, can you heat up my food for 1 minute on medium power?"
+user_input = "hi"
 response_message = send_message_to_agent(agent_state.id, user_input)
 
-print("Microwave Agent:", response_message)
+print("New Agent:", response_message)
 
