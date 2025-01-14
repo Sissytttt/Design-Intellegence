@@ -1,5 +1,5 @@
 # agent name to interact with:
-agent_name = "test"
+agent_name = "Storyteller"
 
 from letta import create_client 
 import json
@@ -16,7 +16,13 @@ agent_state = client.get_agent(
 
 # interact with the agent 
 response = client.user_message(agent_state.id, message="hello")
+# print("response  ", response)
+# print("   ")
+
 function_call_message = response.messages[1]
-arguments = function_call_message.function_call.arguments
+# print("function_call_message  ", function_call_message)
+# print("   ")
+
+arguments = function_call_message.tool_call.arguments
 args_dict = json.loads(arguments)
 print(args_dict["message"])

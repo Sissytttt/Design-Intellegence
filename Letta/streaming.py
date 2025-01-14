@@ -28,7 +28,7 @@ while True:
     '''response:
         [
             InternalMonologue (...,internal_monologue="Updating user's name from Sissy to Julia for accurate interactions."))
-            FunctionCallMessage (..., function_call=FunctionCall(name='core_memory_replace', arguments='{\n  "name": "human",\n  "old_content": "Sissy",\n  "new_content": "Li Bo",\n  "request_heartbeat": true\n}')
+            FunctionCallMessage (..., tool_call=FunctionCall(name='core_memory_replace', arguments='{\n  "name": "human",\n  "old_content": "Sissy",\n  "new_content": "Li Bo",\n  "request_heartbeat": true\n}')
             FunctionReturn (status='success')
             ...
         ]
@@ -36,17 +36,18 @@ while True:
     if len(response.messages) > 1:
         for i, message in enumerate(response.messages):
             class_name = type(message).__name__ 
-            if class_name == "InternalMonologue":
-                print(f"\n\nInternalMonologue: {message.internal_monologue}")
-            elif class_name == "FunctionCallMessage":
-                if message.function_call.name == 'send_message':
-                    arguments = message.function_call.arguments
+            if class_name == "ReasoningMessage":
+                print(f"\nReasoningMessage: {message.reasoning}")
+            elif class_name == "ToolCallMessage":
+                if message.tool_call.name == 'send_message':
+                    arguments = message.tool_call.arguments
                     arguments_dict = json.loads(arguments)
                     print(f"\nSend_Message: {arguments_dict['message']}")
                 else:
-                    print(f"{message.function_call.name}: {message.function_call.arguments}")
-            elif class_name == "FunctionReturn":
-                print(f"FunctionReturn: {message.status}")
+                    print(f"{message.tool_call.name}: {message.tool_call.arguments}")
+            elif class_name == "ToolReturnMessage":
+                    tool_return_dict = json.loads(message.tool_return)
+                    print(f"\nFunctionReturn: {tool_return_dict['status']}, Status: {message.status}")
             else:
                 print("UnknownClassType: ", message)
     else:

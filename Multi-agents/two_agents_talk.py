@@ -22,12 +22,11 @@ current_message = initial_message
 while True:
     # Send message from Storyteller to Test
     response_test = client.user_message(test.id, message=current_message)
-    
     # Extract Test's reply
     if len(response_test.messages) > 1:
         for message in response_test.messages:
-            if type(message).__name__ == "FunctionCallMessage" and message.function_call.name == "send_message":
-                arguments = message.function_call.arguments
+            if type(message).__name__ == "ToolCallMessage" and message.tool_call.name == "send_message":
+                arguments = message.tool_call.arguments
                 arguments_dict = json.loads(arguments)
                 current_message = arguments_dict["message"]
                 print(f"\nTest: {current_message}")
@@ -42,8 +41,8 @@ while True:
     # Extract Storyteller's reply
     if len(response_storyteller.messages) > 1:
         for message in response_storyteller.messages:
-            if type(message).__name__ == "FunctionCallMessage" and message.function_call.name == "send_message":
-                arguments = message.function_call.arguments
+            if type(message).__name__ == "ToolCallMessage" and message.tool_call.name == "send_message":
+                arguments = message.tool_call.arguments
                 arguments_dict = json.loads(arguments)
                 current_message = arguments_dict["message"]
                 print(f"\nStoryteller: {current_message}")

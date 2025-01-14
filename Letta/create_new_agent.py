@@ -21,7 +21,7 @@ agent_state = client.create_agent(
     memory=ChatMemory(
         human="",
         persona="""
-            
+            you are a agent.
         """
     ),
     llm_config=LLMConfig(
