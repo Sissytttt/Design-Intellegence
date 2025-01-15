@@ -1,8 +1,13 @@
 from letta import LLMConfig, EmbeddingConfig
-from bookMemory import BookMemory
+from bookMemory import OrgMemory
 
 
-def create_character_agent(client, name, persona, book_block, tool=None):
+
+def create_agent(client, org_block, name, persona, tool=None):
+    agents = client.list_agents() 
+    # tools = client.list_tools()
+    # print(tools)
+
     client.set_default_embedding_config( 
     EmbeddingConfig(
         embedding_endpoint_type="openai",
@@ -12,19 +17,16 @@ def create_character_agent(client, name, persona, book_block, tool=None):
         embedding_chunk_size=300
     )
 )
-    agents = client.list_agents() 
     for agent in agents:
         if agent.name == name:
             client.delete_agent(client.get_agent_id(f"{name}"))
-            print(f"{name} already exists")
             print(f"delete {name}")
             print(f"recreating {name}")
-
     return client.create_agent(
         name=name,
-        memory=BookMemory(
+        memory=OrgMemory(
             persona=persona,
-            book_block=book_block
+            org_block=org_block
         ),
         llm_config=LLMConfig(
             model="gpt-4o-mini",
@@ -34,6 +36,4 @@ def create_character_agent(client, name, persona, book_block, tool=None):
         ),
         tool_ids=tool if tool else []
     )
-
-
 

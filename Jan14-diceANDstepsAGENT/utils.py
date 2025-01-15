@@ -1,7 +1,6 @@
 import json
 
-def list_tools(client): 
-    tools = client.list_tools()
+def list_tools(tools): 
     for tool in tools:
         print(f"{tool.name}:  , id: {tool.id}")
         # print(tool.tool_type)

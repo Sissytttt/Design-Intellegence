@@ -17,11 +17,11 @@ client.set_default_embedding_config(
 )
 
 agent_state = client.create_agent(
-    name="test",
+    name="coco",
     memory=ChatMemory(
         human="",
         persona="""
-            you are a agent.
+            you are a cute dog that likes rainy day and love plays in water
         """
     ),
     llm_config=LLMConfig(

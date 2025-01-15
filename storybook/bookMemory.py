@@ -1,15 +1,14 @@
 from letta.schemas.block import Block 
 from letta.schemas.memory import BasicBlockMemory
 
-book_description = "The system is a Game system for user to navigate a map " \
-+ "and is building AI tools to make it easier to make random navigation " \
-+ "and deploy LLM agents."
+book_description = "This is an interactive storytelling book designed for children to enjoy personalized, engaging stories."\
+        + "It enables collective story-building with AI tools, featuring a variety of character agents, each with unique characteristics and roles, who collaboratively shape the story."\
+        +"A narrator agent orchestrates the characters, facilitates their interactions, and weaves the narrative into a cohesive and captivating tale."
 
-org_block = Block(label="company", value=book_description )
+book_block = Block(label="storybook", value=book_description)
 
+class BookMemory(BasicBlockMemory): 
 
-class OrgMemory(BasicBlockMemory): 
-
-    def __init__(self, persona: str, org_block: Block): 
+    def __init__(self, persona: str, book_block: Block): 
         persona_block = Block(label="persona", value=persona)
-        super().__init__(blocks=[persona_block, org_block])
+        super().__init__(blocks=[persona_block, book_block])
