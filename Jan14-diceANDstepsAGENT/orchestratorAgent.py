@@ -1,8 +1,6 @@
 from letta import create_client
 
 
-
-
 def get_dir():
     """
     Get a random direction.
